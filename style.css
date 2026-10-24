@@ -1,0 +1,279 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   VIDEO BACKGROUND
+========================================== */
+
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    z-index:-2;
+}
+
+/* ==========================================
+   LIGHT OVERLAY
+========================================== */
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.08);
+    z-index:-1;
+}
+
+/* ==========================================
+   MAIN CARD
+========================================== */
+
+.container{
+
+    width:90%;
+    max-width:520px;
+
+    margin:50px auto;
+
+    padding:35px;
+
+    background:#fafafa;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    border:1px solid #dddddd;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.profile{
+
+    display:block;
+
+    max-width:280px;
+
+    width:100%;
+
+    height:auto;
+
+    margin:0 auto 25px auto;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================
+   PARTNER LOGOS
+========================================== */
+
+.partners{
+
+    display:block;
+
+    max-width:1000px;
+
+    width:100%;
+
+    height:auto;
+
+    margin:15px auto 25px auto;
+
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+h1{
+
+    color:#222;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+p{
+
+    color:#666;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-weight:bold;
+
+    background:#eeeeee;
+
+    border:1px solid #dddddd;
+
+    border-radius:15px;
+
+    padding:16px;
+
+    margin:15px 0;
+
+    transition:all .25s ease;
+
+}
+
+a:hover{
+
+    background:#dddddd;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+a:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.dropdown-btn{
+
+    display:block;
+
+    width:100%;
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-weight:bold;
+
+    background:#eeeeee;
+
+    border:1px solid #dddddd;
+
+    border-radius:15px;
+
+    padding:16px;
+
+    margin:15px 0;
+
+    transition:all .25s ease;
+
+    cursor:pointer;
+
+}
+
+.dropdown-btn:hover{
+
+    background:#dddddd;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.dropdown-content{
+
+    display:none;
+
+}
+
+.dropdown-content a{
+
+    margin:8px 0;
+
+    background:#dbeafe;      /* Light blue */
+
+    border:1px solid #93c5fd;
+
+    color:#1e3a8a;
+
+}
+
+.dropdown-content a:hover{
+
+    background:#bfdbfe;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+.container{
+
+    width:95%;
+
+    margin:20px auto;
+
+    padding:25px;
+
+}
+
+.profile{
+
+    max-width:220px;
+
+}
+
+.partners{
+
+    max-width:220px;
+
+}
+
+h1{
+
+    font-size:30px;
+
+}
+
+}
